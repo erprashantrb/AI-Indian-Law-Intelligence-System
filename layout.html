@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2 class="logo">⚖️ AI Legal Assistant</h2>
+
+    <a href="/dashboard" class="nav-link">🏠 Dashboard</a>
+    <a href="/upload" class="nav-link">📄 Upload Document</a>
+    <a href="/chat" class="nav-link">💬 AI Chat</a>
+    <a href="/compare" class="nav-link">⚖ Compare Clauses</a>
+
+    <button class="theme-btn" onclick="toggleTheme()">🌗 Toggle Theme</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+    
+    <!-- NAVBAR -->
+    <div class="topbar">
+        <h1>{{ title }}</h1>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div class="page-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+</body>
+</html>

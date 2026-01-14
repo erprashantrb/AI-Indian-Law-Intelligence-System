@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Legal Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>⚖️ AI Legal Bot</h2>
+    <a href="/">🏠 Dashboard</a>
+    <a href="/upload">📄 Upload</a>
+    <a href="/chat">💬 Chat</a>
+    <a href="/compare">⚖ Compare</a>
+    <a onclick="toggleTheme()">🌗 Theme</a>
+</div>
+
+<div class="main">
+    <h1>AI Legal Assistant</h1>
+
+    <div class="card">
+        <h2>Quick Actions</h2>
+        <button onclick="location.href='/upload'">📄 Upload Document</button>
+        <button onclick="location.href='/chat'">💬 Ask AI</button>
+        <button onclick="location.href='/compare'">⚖ Compare Clauses</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

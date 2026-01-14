@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+    <h2>Welcome to AI Legal & Policy Assistant</h2>
+    <p>A smart assistant to analyze legal documents, compare clauses, and chat with AI about contract terms.</p>
+
+    <br>
+
+    <button onclick="location.href='/upload'">📄 Upload Document</button>
+    <button onclick="location.href='/chat'">💬 Chat with AI</button>
+    <button onclick="location.href='/compare'">⚖ Compare Clauses</button>
+</div>
+
+<div class="card">
+    <h3>Features</h3>
+    <ul>
+        <li>✔ AI-powered clause interpretation</li>
+        <li>✔ Clause extraction from uploaded documents</li>
+        <li>✔ Smart two-clause comparison with risk scoring</li>
+        <li>✔ ChatGPT-style interactive AI chat</li>
+        <li>✔ Beautiful professional UI (enterprise grade)</li>
+    </ul>
+</div>
+
+{% endblock %}

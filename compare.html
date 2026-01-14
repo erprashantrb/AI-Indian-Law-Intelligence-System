@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+    <h2>Compare Clauses</h2>
+
+    <h3>Clause A</h3>
+    <textarea id="clauseA"></textarea>
+
+    <h3>Clause B</h3>
+    <textarea id="clauseB"></textarea>
+
+    <button onclick="compareClauses()">Compare</button>
+
+    <br><br>
+    <pre id="compareResult"></pre>
+</div>
+
+<script src="{{ url_for('static', filename='js/compare.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+    <h2>Upload Contract / Legal Document</h2>
+
+    <input type="file" id="fileUpload" class="input-file">
+
+    <br><br>
+
+    <button onclick="uploadDocument()">Upload</button>
+
+    <br><br>
+    <pre id="uploadResult"></pre>
+</div>
+
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+
+{% endblock %}

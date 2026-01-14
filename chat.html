@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card">
+    <h2>Chat With AI</h2>
+
+    <div id="chatWindow" class="chat-window"></div>
+
+    <textarea id="clauseInput" placeholder="Clause (optional)"></textarea>
+    <textarea id="userInput" placeholder="Ask AI a question..."></textarea>
+
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+{% endblock %}
